@@ -1,0 +1,328 @@
+/* Fuentes */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #2c2a21;
+    color: #d8c7a3;
+    margin: 0;
+}
+
+/* Menú Lateral con Estilo de Rama */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #3c2f1e;
+    padding-top: 20px;
+    border-right: 5px solid #a8c08d;
+    background-image: url('https://via.placeholder.com/250x500?text=Rama');
+    background-size: cover;
+}
+
+.sidenav h2 {
+    color: #a8c08d;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidenav ul li {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.sidenav ul li a {
+    color: #d8c7a3;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Cinzel', serif;
+    transition: color 0.3s ease;
+}
+
+.sidenav ul li a:hover {
+    color: #a8c08d;
+    transform: scale(1.1);
+}
+
+/* Contenido Principal */
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+}
+
+/* Portada */
+#portada {
+    background: url('https://via.placeholder.com/1500x800/4b3f29/ffffff?text=Visibilio') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#portada .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portada h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 4rem;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    animation: floatUp 4s infinite;
+}
+
+#portada p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: fadeInText 2s forwards;
+    opacity: 0;
+}
+
+/* Animaciones */
+@keyframes floatUp {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes fadeInText {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.animate-title {
+    animation: fadeInText 2s ease-in-out forwards;
+}
+
+.animate-text {
+    animation: fadeInText 2s ease-in-out forwards;
+}
+
+.animate-fade-in {
+    animation: fadeInText 2s ease-in-out forwards;
+}
+/* Personajes */
+#personajes {
+    padding: 60px 20px;
+    background-color: #3b2f1e;
+}
+
+#personajes h2 {
+    color: #d8c7a3;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    margin-bottom: 40px;
+}
+
+/* Personajes */
+.personaje {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.personaje:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.imagen-personaje img {
+    max-width: 250px;
+    border-radius: 50%;
+    border: 5px solid #a8c08d;
+    transition: transform 0.3s ease;
+}
+
+.imagen-personaje img:hover {
+    transform: scale(1.05) rotate(10deg);
+}
+
+.detalle-personaje h3 {
+    color: #d8c7a3;
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+}
+
+.detalle-personaje p {
+    color: #d8c7a3;
+    font-size: 1.1rem;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+/* Contacto */
+#contacto {
+    padding: 60px 20px;
+    background-color: #3b2f1e;
+    text-align: center;
+}
+
+#contacto h2 {
+    color: #d8c7a3;
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    margin-bottom: 40px;
+}
+
+#contacto p {
+    color: #d8c7a3;
+    font-size: 1.2rem;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 30px;
+}
+
+/* Formulario */
+.form-contacto .form-control {
+    border-radius: 10px;
+    background-color: #2c2a21;
+    color: #d8c7a3;
+    border: 2px solid #a8c08d;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.form-contacto .form-control:focus {
+    border-color: #a8c08d;
+    box-shadow: 0 0 10px rgba(168, 192, 141, 0.6);
+}
+
+/* Botón de Enviar */
+.btn-submit {
+    background-color: #a8c08d;
+    border: none;
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #7f9a5a;
+    box-shadow: 0 0 15px rgba(168, 192, 141, 0.6);
+}
+
+/* Enlaces de Compra */
+.enlaces-compra .btn-primary {
+    background-color: #a8c08d;
+    border-radius: 10px;
+    padding: 12px 30px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.enlaces-compra .btn-primary:hover {
+    background-color: #7f9a5a;
+    box-shadow: 0 0 15px rgba(168, 192, 141, 0.6);
+}
+/* Sinopsis */
+#sinopsis {
+    padding: 60px 20px;
+    background-color: #2d241a;
+    color: #d8c7a3;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#sinopsis h2 {
+    color: #a8c08d;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* Texto de la sinopsis */
+.contenido p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #d8c7a3;
+    opacity: 0;
+    animation: fadeInText 2s forwards;
+    margin-bottom: 30px;
+}
+
+/* Resaltado de palabras clave */
+.highlight {
+    color: #a8c08d;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(168, 192, 141, 0.6);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInText {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 15px rgba(168, 192, 141, 0.3), 0 0 30px rgba(168, 192, 141, 0.5);
+        color: #a8c08d;
+    }
+    100% {
+        text-shadow: 0 0 25px rgba(168, 192, 141, 0.6), 0 0 40px rgba(168, 192, 141, 0.8);
+        color: #a8c08d;
+    }
+}
+
+/* Animación para el primer capítulo */
+#capitulo1 {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    margin-top: 40px;
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+#capitulo1 h3 {
+    font-size: 2rem;
+    color: #a8c08d;
+    font-family: 'Cinzel', serif;
+    text-shadow: 0 0 20px rgba

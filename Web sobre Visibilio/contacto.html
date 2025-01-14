@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Visibilio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menú Lateral -->
+    <div class="sidenav">
+        <h2>Visibilio</h2>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sinopsis.html">Sinopsis</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="personajes.html">Protagonistas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+
+    <!-- Contacto -->
+    <div class="main-content">
+        <section id="contacto">
+            <h2 class="animate-title">Contacto</h2>
+            <p class="animate-text">¿Tienes preguntas sobre *Visibilio* o deseas comprar el libro? ¡Contáctanos y te daré la información necesaria.!</p>
+
+            <!-- Formulario de Contacto -->
+            <form action="#" method="POST" class="form-contacto">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Tu Nombre</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit">Enviar Mensaje</button>
+            </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
